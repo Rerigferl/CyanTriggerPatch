@@ -13,10 +13,10 @@ namespace GetSendCustomNetworkEventMethodPatch
         static GetSendCustomNetworkEventMethodPatch()
         {
             var harmony = new Harmony("Numeira.GetSendCustomNetworkEventMethodPatch");
-            harmony.Patch(typeof(Type).GetMethod("GetMethod", new[] { typeof(string) }), prefix: new HarmonyMethod(typeof(GetSendCustomNetworkEventMethodPatch), nameof(GetMethodProxy2)));
+            harmony.Patch(typeof(Type).GetMethod("GetMethod", new[] { typeof(string) }), prefix: new HarmonyMethod(typeof(GetSendCustomNetworkEventMethodPatch), nameof(GetMethodProxy)));
         }
 
-        private static bool GetMethodProxy2( string name, Type __instance, ref MethodInfo __result)
+        private static bool GetMethodProxy( string name, Type __instance, ref MethodInfo __result)
         {
             if (name is not "SendCustomNetworkEvent")
                 return true;
