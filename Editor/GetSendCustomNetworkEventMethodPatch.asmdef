@@ -1,0 +1,25 @@
+{
+    "name": "GetSendCustomNetworkEventMethodPatch",
+    "rootNamespace": "",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "0Harmony.dll",
+        "VRC.Udon.Common.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.vrchat.worlds",
+            "expression": "3.8.1",
+            "define": "VRC_SDK_3_8_1"
+        }
+    ],
+    "noEngineReferences": false
+}
