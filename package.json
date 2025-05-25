@@ -1,11 +1,14 @@
 {
     "name": "numeira.get-sendcustomnetworkevent-method-patch",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "unity": "2022.3",
     "author": {
       "name": "Numeira"
     },
     "displayName": "GetSendCustomNetworkEventMethodPatch",
     "description": "Extension to fix compatibility between VRC SDK v3.8.1",
-    "url": "https://github.com/Rerigferl/get-sendcustomnetworkevent-method-patch"
+    "url": "https://github.com/Rerigferl/get-sendcustomnetworkevent-method-patch",
+    "vpmDependencies": {
+        "com.vrchat.worlds": "3"
+    }
 }
